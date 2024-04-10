@@ -10,3 +10,16 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+.esc .btn {
+ opacity: 0; 
+ visibility: hidden; 
+}
+
+.esc:hover .btn {
+opacity: 1;
+visibility: visible;
+}
+
+.fa-solid {
+    font-size: 10px;
+}
