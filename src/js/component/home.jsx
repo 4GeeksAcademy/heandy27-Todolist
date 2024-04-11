@@ -45,7 +45,7 @@ const Home = () => {
 
 				</div>
 
-				<div className="row shadow-lg py-2 mx-1" >
+				<div className={`row shadow-lg py-2 mx-1 ${items.length === 0 ? "opacity-0" : "opacity-100"}`} >
 					<div className="col">
 						{items.map((item, index) => (
 							<p className={`d-flex justify-content-between px-3 border-bottom mt-2  esc`} key={index}>{item}
@@ -55,7 +55,7 @@ const Home = () => {
 
 						))}
 					</div>
-					<span className="d-flex justify-content-start fs-6 px-3 text-secondary py-0">{items.length} Tareas restantes</span>
+					<span className={`d-flex justify-content-start fs-6 px-3 text-secondary py-0 ${items.length === 0 ? "opacity-0" : "opacity-100"}`}>{items.length} Tareas restantes</span>
 				</div>
 			</div>
 		</div>
